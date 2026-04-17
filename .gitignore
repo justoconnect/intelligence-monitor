@@ -205,3 +205,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Project-specific additions ---
+# SQLite journals and local DBs produced by examples
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+examples/*.db
+examples/*.json
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local virtual environments
+.venv/
+venv/
+.python-version
+
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
